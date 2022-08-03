@@ -1,0 +1,39 @@
+void count_down() {
+  u8 j = 10;           // Init j at 10.
+
+  // Loop down, decrement j.
+  while (j > 0) {
+    out(j);
+    j = j - 1;
+  }
+}
+
+
+void count_up() {
+  // Set blah to 0.
+  u8 blah = 0;
+
+  // Increment blah.
+  while (blah <= 10) {
+    out(blah);
+    blah = blah + 1;
+  }
+}
+
+
+void mul_of_two() {
+  u8 i = 1;
+
+  while (i <= 13) {
+    out(2 * i);
+    i = i + 1;
+  }
+}
+
+
+u8 main() {
+  count_down(0);
+  count_up(0);
+  mul_of_two(0);
+  return 0;
+}
